@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // Ganti nilai berikut dengan connection string MongoDB Atlas milikmu
 // URL ini sudah hardcoded seperti yang Anda berikan
@@ -102,5 +102,6 @@ app.listen(port, () => {
     console.log(`Server berjalan di http://localhost:${port}`);
 
 });
+
 
 
