@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 // Ganti nilai berikut dengan connection string MongoDB Atlas milikmu
 // URL ini sudah hardcoded seperti yang Anda berikan
-const mongoURI = 'mongodb+srv://Admin:Admin123@pragos.tdodzi7.mongodb.net/?retryWrites=true&w=majority&appName=pragos';
+const mongoURI = 'process.env.MONGO_URI';
 
 // Hubungkan ke MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -102,4 +102,5 @@ app.listen(port, () => {
     console.log(`Server berjalan di http://localhost:${port}`);
 
 });
+
 
